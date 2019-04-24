@@ -14,7 +14,8 @@ namespace Arena
     {
         private double hp;
         public double HP { get { return hp; } set { hp = value; } }
-        public double mass;
+        private double mass;
+        public double Mass { get { return mass; } set { mass = value; } }
         public List<double> damageResistances = new List<double>();
 
         public ShipBlock() { }
