@@ -42,12 +42,15 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Circle.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shield.cs" />
     <Compile Include="Ship.cs" />
     <Compile Include="ShipBlock.cs" />
     <Compile Include="ShipModule.cs" />
+    <Compile Include="_globals.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

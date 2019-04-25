@@ -18,5 +18,28 @@ namespace Arena
         {
             return a.X * b.Y - a.Y * b.X;
         }
+
+        public enum Types
+        {
+            Generator = 0,
+            Thruster = 1,
+            Conduit = 2,
+            Cockpit = 3,
+            Weapon = 4
+        }
+
+        public enum AttackTypes
+        {
+            Laser = 0,
+            Ballistic = 1,
+            Missile = 2
+        }
+
+        public static Vector2 RotVect(Vector2 vect, double theta)
+        {
+            float x = (float)(vect.X * Math.Cos(theta) - vect.Y * Math.Sin(theta));
+            float y = (float)(vect.X * Math.Sin(theta) + vect.Y * Math.Cos(theta));
+            return new Vector2(x, y);
+        }
     }
 }
