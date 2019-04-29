@@ -17,6 +17,8 @@ namespace Arena
         private double mass;
         public double Mass { get { return mass; } set { mass = value; } }
         public List<double> damageResistances = new List<double>();
+        private bool coveredByShield;
+        public bool CoveredByShield { get { return coveredByShield; } set { coveredByShield = value; } }
 
         public ShipBlock() { }
     }

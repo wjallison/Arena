@@ -27,6 +27,7 @@ namespace Arena
 
         public List<Ship> targets = new List<Ship>();
         //private double shields;
+        public List<Shield> shieldList = new List<Shield>();
 
         //private List<>
         
